@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <style>
+
+        body{
+            font-family: latha;
+            color: white;
+            background: linear-gradient(
+          rgba(0,0,0,0.40), rgba(0,0,0,0.30), rgba(0,0,0,0.10), rgba(0,0,0,0))
+            ,url(Food.jpeg)no-repeat;
+            background-size: cover;
+        }
+
+        .box{width: 900px;
+        float: right;
+        border: 1px solid none; }
+
+        .box ul li{
+            width: 120px;
+            float: left;
+            margin: 10px auto;
+            text-align: center;
+        }
+
+        .box ul li a{ text-decoration: none;
+        color: darkgrey;}
+
+        .box ul li:hover{ background-color: rgb(50, 54, 54);}
+        .box ul li a:hover{ color: white;}
+
+        .wd{ 
+            width: 300px;
+            height: 539px;
+            background-color: rgb(37, 37, 35);
+            opacity: 0.9;
+            padding: 55px;
+        }
+
+        .wd h1{
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 30px;
+        }
+
+        .wd h4{
+            text-align: justify;
+            color: darkgrey;
+            font-weight: normal;
+            font-style: italic;
+        }
+
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "c4da1fad-0fb8-401f-adf7-02b2c1e4986e", // The ID of this integration.
+            region: "eu-gb", // The region your integration is hosted in.
+            serviceInstanceID: "4177c8e0-c466-43b7-9ad9-598de864bcf7", // The ID of your service instance.
+            onLoad: function(instance) { instance.render(); }
+          };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+          document.head.appendChild(t);
+        });
+      </script>
+      
+
+    <div class="box">
+    <ul type="none">
+        <li><a href=""> Home</a></li>
+        <li><a href=""> Menu</a></li>
+        <li><a href=""> Orders</a></li>
+        <li><a href=""> Contact</a></li>
+    </ul>
+    </div>
+
+    <div class="wd">
+
+        <h1>Welcome!</h1>
+
+        <h4>Find some flavours, have a Delish Taste. 
+            Delicious cuisines in a blink of your eye.</h4>
+
+    </div>
+</body>
+</html>
